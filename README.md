@@ -36,6 +36,7 @@ ______________________________________________
 Steps we followed:
 * Train/Validation Split 20% for Test.
 * Identify Column Types.
-* Building Pipeline.
 * Fit Transform Only On the Training Part "The 80%".
 * Saving The Preprocessing Pipeline.
+* Fixing Corrupted Pressure Scaling.
+* Building a Numeric & Categorical Pipeline.

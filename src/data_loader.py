@@ -1,7 +1,7 @@
 # src/data_loader.py
 
 import pandas as pd
-from src.config import DATA_DIR
+from config import DATA_DIR
 
 DATA_PATH = DATA_DIR / "powerpredict.csv.zip"
 

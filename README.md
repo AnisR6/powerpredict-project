@@ -8,13 +8,14 @@ Steps we followed:
 * Creation of VS Code Project Structure.
 * Loading the Dataset.
 * Initial EDA (Exploratory Data Analysis).
-* Initial Source Code for Loading the Dataset.
 ______________________________________________
 
 ## 2. Data Visualization
-
 ______________________________________________
 
 Steps we followed:
 * Importing the Dataset Inside EDA Notebook.
 * Verifying that the Dataset Loads Correctly.
+* Visualizing Features and General Information of the Dataset.
+* Initial Source Code for Path Configuration.
+* Initial Source Code for Loading the Dataset.

@@ -55,3 +55,10 @@ Neural Networks work much better when features are on same scale.
 3. Column Transformer "ColumnTransformer":
 - **numeric_transformer** ==> Apply different transformations to different column types numeric_features.
 - **categorical_transformer** ==> Apply different transformations to different column types categorical_features.
+
+4. Spliting Features:
+- Automatically detect numeric and categorical columns.
+
+5. Fixing Corrupted Pressure Scaling:
+- Fix unrealistic high values.
+- Replace invalid min zeros.

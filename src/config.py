@@ -2,12 +2,16 @@
 
 from pathlib import Path
 
+# Project root (src/config.py -> src -> project root)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-DATA_PATH = PROJECT_ROOT / "data" / "powerpredict.csv.zip"
+# Data
+DATA_DIR = PROJECT_ROOT / "data"
+DATA_PATH = DATA_DIR / "powerpredict.csv.zip"
 
+# Models
 MODEL_DIR = PROJECT_ROOT / "models"
 
+# Reproducibility
 RANDOM_STATE = 42
-
 TEST_SIZE = 0.2

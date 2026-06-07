@@ -1,0 +1,23 @@
+# ** EDA Summary **
+
+1. No Missing Values:
+- No Imputation.
+- No Median Filling.
+- No Dropping Rows.
+
+2. Categorical Columns:
+- 10 Categorical Columns (5 weather_main columns, 5 weather_description columns) That Needs Encoding.
+- Weather Categories Are Small (We Can Use One-hot Encoding).
+
+3. Duplicate Situation:
+- Huge Amount of Duplicates (X duplicates = 9700, Dataset duplicates = 9274, "9700 / 39997 ≈ 24%") so Nearly One Quarter of the Dataset Has Duplicate Feature Rows.
+- Needs Investigation Before Deciding Removing or Not.
+
+4. Correlations Are Weak:
+- The Strongest Correlation We have (Gotham City_wind_speed = 0.217) is Considered Quite Small.
+- Most Features Are in the Range of 0.10 - 0.20.
+- This is good for Neural Networks Because it Can Model Interactions.
+
+5. No Timestamp Column:
+- RangeIndex Confirmed That There is No Date Column "No Temporal Features Available" Which Simplifies Things.
+

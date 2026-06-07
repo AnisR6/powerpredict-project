@@ -2,7 +2,7 @@
 
 import pandas as pd
 import numpy as np
-from .config import DATA_PATH
+from config import DATA_PATH
 
 def load_raw_data():
     df = pd.read_csv(DATA_PATH)

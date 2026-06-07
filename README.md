@@ -19,3 +19,8 @@ Steps we followed:
 * Visualizing Features and General Information of the Dataset.
 * Initial Source Code for Path Configuration.
 * Initial Source Code for Loading the Dataset.
+* Checking Missing Values.
+* Checking Data Types.
+* Examining Target Variable.
+* Checking Duplicates.
+* Observe Correlation With Target.

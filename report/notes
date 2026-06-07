@@ -21,3 +21,20 @@
 5. No Timestamp Column:
 - RangeIndex Confirmed That There is No Date Column "No Temporal Features Available" Which Simplifies Things.
 
+6. Pressure Problems:
+- Springfield_bars is Suspicious 33 Row Are Extremly High.
+- Real Data-quality Issue.
+- Min Value of 0.
+
+________________________________
+
+# Afer Investigation
+
+1. Duplicate Situation:
+- There is at least 38 distinct target values associated with identical weather measurements.
+- There are hidden factors affecting power consumption that are not present in the dataset.
+- We are not going to remove duplicates.
+
+2. Pressure Problems:
+- Springfield_bars is definitely corrupted "systematic data corruption" We Fixed it.
+- The min value of 0 has been declared Nan to fix later in cleaning.

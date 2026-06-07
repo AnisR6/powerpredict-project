@@ -23,4 +23,12 @@ Steps we followed:
 * Checking Data Types.
 * Examining Target Variable.
 * Checking Duplicates.
-* Observe Correlation With Target.
+* Observed Correlation With Target.
+* Measuring Category Size.
+* Investigating and Fixing The Pressure.
+* Checking if Multicollinearity is Possible for Linear Regression.
+
+______________________________________________
+
+## 3. Data Cleaning
+______________________________________________

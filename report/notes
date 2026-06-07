@@ -38,3 +38,20 @@ ________________________________
 2. Pressure Problems:
 - Springfield_bars is definitely corrupted "systematic data corruption" We Fixed it.
 - The min value of 0 has been declared Nan to fix later in cleaning.
+
+________________________________
+
+# Pre-processing Pipeline
+
+1. Numeric pipeline "numeric_transformer":
+- **SimpleImputer(strategy="median")** ==> If a value is missing (NaN) replace it with the median of that column.
+- **StandardScaler()** ==> Transforms data into: "z= x−μ / σ" so: mean = 0 and std = 1. Because models like Linear Regression
+Neural Networks work much better when features are on same scale.
+
+2. Categorical pipeline "categorical_transformer":
+- **SimpleImputer(strategy="most frequent")** ==> If missing category replace with most common "repeated" value.
+- **OneHotEncoder** ==> Transforms categories into binary columns. Because ML models cannot understand text directly.
+
+3. Column Transformer "ColumnTransformer":
+- **numeric_transformer** ==> Apply different transformations to different column types numeric_features.
+- **categorical_transformer** ==> Apply different transformations to different column types categorical_features.

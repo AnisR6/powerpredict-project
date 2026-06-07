@@ -1,5 +1,4 @@
 # Powerpredict ML Project
-______________________________________________
 
 ## 1. Initial Setup & Data Visualization
 ______________________________________________

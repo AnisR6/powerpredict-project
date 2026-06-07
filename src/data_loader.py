@@ -1,8 +1,8 @@
 # src/data_loader.py
 
 import pandas as pd
-from src.config import DATA_PATH
-from src.cleaning import basic_cleaning
+from config import DATA_PATH
+from cleaning import basic_cleaning
 
 
 def load_raw_data() -> pd.DataFrame:

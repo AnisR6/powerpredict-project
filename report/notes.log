@@ -28,7 +28,6 @@
 
 7. Static Values:
 - These features "New New York_snow, Springfield_snow" contain zero information.
-
 ________________________________
 
 # Afer Investigation
@@ -45,7 +44,6 @@ ________________________________
 
 3. Static Values:
 - Static values with zero variance needs to be cleaned in the cleaning.py file.
-
 ________________________________
 
 # Pre-processing Pipeline
@@ -72,3 +70,6 @@ Neural Networks work much better when features are on same scale.
 
 6. Static Values:
 - Remove columns with zero variance.
+________________________________
+
+# Linear Regression & Ridge Regression

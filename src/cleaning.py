@@ -11,7 +11,7 @@ def basic_cleaning(df: pd.DataFrame) -> pd.DataFrame:
         df["Springfield_bars"] = df["Springfield_bars"].astype(float)
 
         # fix unrealistic values
-        df.loc[df["Springfield_bars"] > 10000, "Springfield_bars"] /= 1000
+        df.loc[df["Springfield_bars"] > 10000, "Springfield_bars"] /= 100
 
         # replace invalid zeros
         df.loc[df["Springfield_bars"] == 0, "Springfield_bars"] = np.nan

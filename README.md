@@ -1,17 +1,14 @@
 # Powerpredict ML Project
 
 ## 1. Initial Setup
-______________________________________________
 
 Steps we followed:
 * Creation of GitHub Repository.
 * Creation of VS Code Project Structure.
 * Loading the Dataset.
 * Initial EDA (Exploratory Data Analysis).
-______________________________________________
 
 ## 2. Data Visualization
-______________________________________________
 
 Steps we followed:
 * Importing the Dataset Inside EDA Notebook.
@@ -27,10 +24,8 @@ Steps we followed:
 * Measuring Category Size.
 * Investigating and Fixing The Pressure.
 * Checking if Multicollinearity is Possible for Linear Regression.
-______________________________________________
 
 ## 3. Data Cleaning
-______________________________________________
 
 Steps we followed:
 * Train/Validation Split 20% for Test.
@@ -39,10 +34,28 @@ Steps we followed:
 * Saving The Preprocessing Pipeline.
 * Fixing Corrupted Pressure Scaling.
 * Building a Numeric & Categorical Pipeline.
-______________________________________________
 
 ## 4. Linear Regression
-______________________________________________
 
 Steps we followed:
-* 
+* Loaded dataset.
+* Trained / validated split.
+* Featured split.
+* Builded preprocessing pipeline.
+* Builded full model pipeline.
+* Saved Baseline ML model.
+* Dummy comparison.
+
+## 5. Ridge Regression "Alone and With Feature Engineering"
+
+Steps we followed:
+* Building on top of Linear Regression.
+* Adding L2 Regularisation.
+* Testing Diferent Alpha Learning Rates.
+* Trying to Eliminate STR Features "Numeric-only Ridge".
+* Introducion New Features By avereging.
+
+## 6. Neural Networks
+
+Steps we followed:
+* Builded a Two Hidden Layers Network.

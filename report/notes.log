@@ -75,3 +75,11 @@ ________________________________
 # Linear Regression & Ridge Regression
 
 1. We tried to eliminate the str type of features with L2 regularisation the results were worst.
+
+2. After trying multiple Alphas the 0.1 gave us the best result so we saved the model.
+
+3. these results were recoreded: 
+- Linear Regression MAE: 3118.06
+- Ridge α=0.1 MAE: 3117.65
+- Numeric-only Ridge MAE: 3252.93
+________________________________

@@ -73,3 +73,5 @@ Neural Networks work much better when features are on same scale.
 ________________________________
 
 # Linear Regression & Ridge Regression
+
+1. We tried to eliminate the str type of features with L2 regularisation the results were worst.

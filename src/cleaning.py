@@ -4,20 +4,37 @@ import numpy as np
 import pandas as pd
 
 def basic_cleaning(df: pd.DataFrame) -> pd.DataFrame:
-
-    # Basic data cleaning based on EDA findings.
     df = df.copy()
 
-    # Springfield pressure corruption
     if "Springfield_bars" in df.columns:
 
         df["Springfield_bars"] = df["Springfield_bars"].astype(float)
 
-        # Original corrupted values
-        df.loc[df["Springfield_bars"] > 10000, "Springfield_bars"] /= 1000
+        # 6-digit corruption
+        mask_6 = (
+            (df["Springfield_bars"] >= 10000)
+            & (df["Springfield_bars"] < 1000000)
+        )
 
-        # Any remaining pressure below realistic range is considered corrupted and replaced by NaN
-        df.loc[df["Springfield_bars"] < 900, "Springfield_bars"] = np.nan
+        df.loc[mask_6, "Springfield_bars"] /= 100
+
+        # 7-digit corruption
+        mask_7 = df["Springfield_bars"] >= 1000000
+
+        df.loc[mask_7, "Springfield_bars"] /= 1000
+
+        # impossible pressure values
+        df.loc[
+            (df["Springfield_bars"] < 900)
+            | (df["Springfield_bars"] > 1100),
+            "Springfield_bars"
+        ] = np.nan
+
+        # zero pressure
+        df.loc[
+            df["Springfield_bars"] == 0,
+            "Springfield_bars"
+        ] = np.nan
 
     return df
 

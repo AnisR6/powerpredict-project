@@ -26,6 +26,9 @@
 - Real Data-quality Issue.
 - Min Value of 0.
 
+7. Static Values:
+- These features "New New York_snow, Springfield_snow" contain zero information.
+
 ________________________________
 
 # Afer Investigation
@@ -38,6 +41,10 @@ ________________________________
 2. Pressure Problems:
 - Springfield_bars is definitely corrupted "systematic data corruption" We Fixed it.
 - The min value of 0 has been declared Nan to fix later in cleaning.
+- Very low values for the pressure "Which is unrealistic [10 - 150]". 
+
+3. Static Values:
+- Static values with zero variance needs to be cleaned in the cleaning.py file.
 
 ________________________________
 
@@ -62,3 +69,6 @@ Neural Networks work much better when features are on same scale.
 5. Fixing Corrupted Pressure Scaling:
 - Fix unrealistic high values.
 - Replace invalid min zeros.
+
+6. Static Values:
+- Remove columns with zero variance.

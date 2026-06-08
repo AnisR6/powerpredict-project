@@ -27,7 +27,6 @@ Steps we followed:
 * Measuring Category Size.
 * Investigating and Fixing The Pressure.
 * Checking if Multicollinearity is Possible for Linear Regression.
-
 ______________________________________________
 
 ## 3. Data Cleaning
@@ -40,3 +39,10 @@ Steps we followed:
 * Saving The Preprocessing Pipeline.
 * Fixing Corrupted Pressure Scaling.
 * Building a Numeric & Categorical Pipeline.
+______________________________________________
+
+## 4. Linear Regression
+______________________________________________
+
+Steps we followed:
+* 

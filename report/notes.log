@@ -78,8 +78,15 @@ ________________________________
 
 2. After trying multiple Alphas the 0.1 gave us the best result so we saved the model.
 
-3. these results were recoreded: 
+3. These results were recoreded: 
 - Linear Regression MAE: 3118.06
 - Ridge α=0.1 MAE: 3117.65
 - Numeric-only Ridge MAE: 3252.93
+
+4. Feature Engineering:
+- We tried to do Feature engineering by creating new average features to improve the MAE of the model
+- The Best result was recoreded Feature Engineering + Ridge MAE: 3080.43718498028
 ________________________________
+
+# Neural Networks
+

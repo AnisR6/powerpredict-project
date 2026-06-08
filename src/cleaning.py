@@ -10,7 +10,7 @@ def basic_cleaning(df: pd.DataFrame) -> pd.DataFrame:
 
         df["Springfield_bars"] = df["Springfield_bars"].astype(float)
 
-        # 6-digit corruption → missing decimal shift
+        # 6-digit corruption
         mask_6 = (
             (df["Springfield_bars"] >= 10000)
             & (df["Springfield_bars"] < 1000000)
@@ -21,7 +21,14 @@ def basic_cleaning(df: pd.DataFrame) -> pd.DataFrame:
         mask_7 = df["Springfield_bars"] >= 1000000
         df.loc[mask_7, "Springfield_bars"] /= 1000
 
-        # invalid values
+        # remove physically impossible values
+        df.loc[
+            (df["Springfield_bars"] < 900) |
+            (df["Springfield_bars"] > 1100),
+            "Springfield_bars"
+        ] = np.nan
+
+        # zero values
         df.loc[df["Springfield_bars"] == 0, "Springfield_bars"] = np.nan
 
     return df

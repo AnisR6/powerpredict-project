@@ -90,3 +90,10 @@ ________________________________
 
 # Neural Networks
 
+1. we first used a simple architecture with 2 hidden layers and (128, 64) neurons each, using ReLU activation and Adam optimizer.
+ and got 2580 MLE.
+2. and then we tried to modify the hidden layers with 3, and it improved to 2287 MaE. a big jump.
+3. we then modified the values of of alpha = 0.001 and max_iter = 500, and got 2248 MAE.
+4. finally i modified the learning rate alpha = 0.1 and got 2230.83 MAE.
+5. with 4 hidden layers, we got a huge jump to 2706.
+6. with also 3 hidden layers (128, 64, 32), we got 2337, so went up a little bit.

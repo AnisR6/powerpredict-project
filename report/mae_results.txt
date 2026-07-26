@@ -29,3 +29,15 @@ Neural Network + Improvment MAE:
 
 2230.831786763246
 ________________________
+________________________
+
+NOTE: all entries below use a CHRONOLOGICAL train/valid split (not the random split used above), because power_consumption is a time-ordered series and a random split leaks information. These numbers are not directly comparable to the entries above.
+
+XGBoost + Weather Features only (chronological split) MAE: 
+
+2842.5470041503904
+________________________
+
+XGBoost + Weather Features + Lag Features (chronological split) MAE: 
+
+590.8307502599606
